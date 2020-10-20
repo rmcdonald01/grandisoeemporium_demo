@@ -15,11 +15,11 @@ Thumbs.db
 /public/zip/
 /public/images/
 /public/images/media/
-/storage
+
 !/vendor/rehan/
 /vendor
 
-/storage
+
 .env
 .phpunit.result.cache
 Homestead.json
