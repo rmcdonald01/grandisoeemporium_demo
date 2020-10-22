@@ -4,7 +4,7 @@ networks:
   default:
     external:
       name: nginx-proxy
-  lifestyletech_fiance:
+  grandiose_demo:
 
 services:
   nginx:
