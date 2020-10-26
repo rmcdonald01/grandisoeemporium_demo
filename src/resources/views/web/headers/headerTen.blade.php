@@ -1,7 +1,7 @@
 <!-- //header style Ten -->
 @include('web.headers.fixedHeader') 
 <header id="headerTen" class="header-area header-ten  header-desktop d-none d-lg-block d-xl-block">
-  <div class="header-mini bg-top-bar">
+  <div class="header-mini bg-top-bar" style="background-color:#252525;">
     <div class="container">
       <div class="row align-items-center">
         <div class="col-12">
@@ -27,7 +27,7 @@
               @endif
               @if(count($currencies) > 1)
                 <div class="dropdown">
-                  <button class="btn dropdown-toggle" type="button" >
+                  <button style="color:white !important;" class="btn dropdown-toggle" type="button" >
                     {{session('currency_code')}}
                   </button>
                   <div class="dropdown-menu">
@@ -53,7 +53,7 @@
                           }
                       ?> 
                       </div>
-                      <span><?php if(auth()->guard('customer')->check()){ ?>@lang('website.Welcome') {{auth()->guard('customer')->user()->first_name}}&nbsp;! <?php }?> </span>
+                      <span style="color:#ffffff !important;"><?php if(auth()->guard('customer')->check()){ ?>@lang('website.Welcome') {{auth()->guard('customer')->user()->first_name}}&nbsp;! <?php }?> </span>
                   </div>
                 </li>
                 <?php if(auth()->guard('customer')->check()){ ?>
@@ -64,8 +64,8 @@
                   <li class="nav-item"> <a href="{{url('shipping-address')}}" class="nav-link">@lang('website.Shipping Address')</a> </li>
                   <li class="nav-item"> <a href="{{url('logout')}}" class="nav-link">@lang('website.Logout')</a> </li>
                   <?php }else{ ?>
-                    <li class="nav-item"><div class="nav-link">@lang('website.Welcome')!</div></li>
-                    <li class="nav-item"> <a href="{{ URL::to('/login')}}" class="nav-link -before"><i class="fa fa-lock" aria-hidden="true"></i>&nbsp;@lang('website.Login/Register')</a> </li>                      
+                    <li class="nav-item"><div style="color:#6f6e6e !important;" class="nav-link">@lang('website.Welcome')!</div></li>
+                    <li class="nav-item"> <a style="color:#6f6e6e !important;" href="{{ URL::to('/login')}}" class="nav-link -before"><i class="fa fa-lock" aria-hidden="true"></i>&nbsp;@lang('website.Login/Register')</a> </li>                      
                   <?php } ?>
               </ul> 
             </div>   
@@ -74,28 +74,30 @@
       </div>
     </div> 
   </div>
-  <div class="header-maxi bg-header-bar">
+  <div class="header-maxi bg-header-bar" style="background-color:#111111 !important;">
     <div class="container">
       <div class="row align-items-center">
         <div class="col-12 col-md-12 col-lg-3">
-          <a href="{{ URL::to('/')}}" class="logo" data-toggle="tooltip" data-placement="bottom" title="@lang('website.logo')">
-            @if($result['commonContent']['settings']['sitename_logo']=='name')
-            <?=stripslashes($result['commonContent']['settings']['website_name'])?>
-            @endif
+          <a style="color:#ffffff;" href="{{ URL::to('/')}}" class="logo" data-toggle="tooltip" data-placement="bottom" title="@lang('website.logo')">
+            <!-- @if($result['commonContent']['settings']['sitename_logo']=='name') -->
+            <!-- <?=stripslashes($result['commonContent']['settings']['website_name'])?> -->
+            <!-- @endif -->
         
-            @if($result['commonContent']['settings']['sitename_logo']=='logo')
-            <img class="img-fluid" src="{{asset('').$result['commonContent']['settings']['website_logo']}}" alt="<?=stripslashes($result['commonContent']['settings']['website_name'])?>">
-            @endif
+            <!-- @if($result['commonContent']['settings']['sitename_logo']=='logo') -->
+            <!-- <img class="img-fluid" src="{{asset('').$result['commonContent']['settings']['website_logo']}}" alt="<?=stripslashes($result['commonContent']['settings']['website_name'])?>"> -->
+            <!-- @endif -->
+            THE GRANDIOSE EMPORIUM
             </a>
         </div>
-        
+
+                    
             <div class="col-12 col-sm-6">
             
               <form class="form-inline" action="{{ URL::to('/shop')}}" method="get">   
-                <div class="search-field-module" style="border:0px !important;background-color:#1d1d1d !important;">   
+                <div class="search-field-module" style="border:1px solid #111111;">   
                     <input type="hidden" name="category" class="category-value" value="">
                     @include('web.common.HeaderCategories')
-                  <button class="btn btn-secondary swipe-to-top dropdown-toggle header-selection" type="button" id="headerOneCartButton"  
+                  <button style="background-color:#d8cd2b; !important;border:0px !important;height:42px;" class="btn btn-secondary swipe-to-top dropdown-toggle header-selection" type="button" id="headerOneCartButton"  
                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" 
                     data-toggle="tooltip" data-placement="bottom" title="@lang("website.Choose Any Category")"> 
                     @lang("website.Choose Any Category")
@@ -104,8 +106,8 @@
                       @php    productCategories(); @endphp                                                                 
                   </div>
                   <div class="search-field-wrap">
-                      <input  type="search" name="search" placeholder="@lang('website.Search entire store here')..." data-toggle="tooltip" data-placement="bottom" title="@lang('website.Search Products')" value="{{ app('request')->input('search') }}">
-                      <button class="btn btn-secondary swipe-to-top" data-toggle="tooltip" 
+                      <input style="border:0px !important;  type="search" name="search" placeholder="@lang('website.Search entire store here')..." data-toggle="tooltip" data-placement="bottom" title="@lang('website.Search Products')" value="{{ app('request')->input('search') }}">
+                      <button style="background-color:#262121;border:1px solid #1d1d1d;" class="btn btn-secondary swipe-to-top" data-toggle="tooltip" 
                       data-placement="bottom" title="@lang('website.Search Products')">
                       <i class="fa fa-search"></i></button>
                   </div>
@@ -116,8 +118,8 @@
            <ul class="pro-header-right-options">
             <li>
               <a href="{{ URL::to('/wishlist')}}" class="btn" data-toggle="tooltip" data-placement="bottom" title="@lang('website.Wishlist')">
-                <i class="far fa-heart"></i>
-                <span class="badge badge-secondary total_wishlist">{{$result['commonContent']['total_wishlist']}}</span>
+                <i style="color:#ffffff;" class="far fa-heart"></i>
+                <span style="background-color:#262121 !important;color:#d8cd2b;" class="badge badge-secondary total_wishlist">{{$result['commonContent']['total_wishlist']}}</span>
               </a>
             </li>
             <li class="dropdown head-cart-content">

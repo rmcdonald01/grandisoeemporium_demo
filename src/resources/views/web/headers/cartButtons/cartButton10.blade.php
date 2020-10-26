@@ -5,13 +5,13 @@
 
 <button id="dropdownCartButton" class="btn dropdown-toggle" type="button" id="headerOneCartButton"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" > 
     <div class="cart-left">
-     <i class="fas fa-shopping-bag"></i>
-     <span class="badge badge-secondary">{{ $qunatity }}</span>
+     <i style="color:#ffffff;" class="fas fa-shopping-cart"></i>
+     <span style="background-color:#262121 !important;color:#d8cd2b;" class="badge badge-secondary">{{ $qunatity }}</span>
     </div>
  
        <div class="cart-right d-flex flex-column align-self-end ml-13">
-         <span class="title-cart">@lang('website.My Cart')</span>
-         <span class="cart-item"> @lang('website.items')</span>
+         <span style="color:#6f6e6e;" class="title-cart">@lang('website.My Cart')</span>
+         <span style="color:#6f6e6e;" class="cart-item"> @lang('website.items')</span>
        </div>
    </button> 
    @if(count($result['commonContent']['cart'])>0)
