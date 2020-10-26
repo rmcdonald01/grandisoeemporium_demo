@@ -1,7 +1,7 @@
 <!-- //header style Ten -->
 <?php echo $__env->make('web.headers.fixedHeader', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?> 
 <header id="headerTen" class="header-area header-ten  header-desktop d-none d-lg-block d-xl-block">
-  <div class="header-mini bg-top-bar">
+  <div class="header-mini bg-top-bar" style="background-color:#252525;">
     <div class="container">
       <div class="row align-items-center">
         <div class="col-12">
@@ -27,7 +27,7 @@
               <?php endif; ?>
               <?php if(count($currencies) > 1): ?>
                 <div class="dropdown">
-                  <button class="btn dropdown-toggle" type="button" >
+                  <button style="color:white !important;" class="btn dropdown-toggle" type="button" >
                     <?php echo e(session('currency_code')); ?>
 
                   </button>
@@ -54,7 +54,7 @@
                           }
                       ?> 
                       </div>
-                      <span><?php if(auth()->guard('customer')->check()){ ?><?php echo app('translator')->get('website.Welcome'); ?> <?php echo e(auth()->guard('customer')->user()->first_name); ?>&nbsp;! <?php }?> </span>
+                      <span style="color:#ffffff !important;"><?php if(auth()->guard('customer')->check()){ ?><?php echo app('translator')->get('website.Welcome'); ?> <?php echo e(auth()->guard('customer')->user()->first_name); ?>&nbsp;! <?php }?> </span>
                   </div>
                 </li>
                 <?php if(auth()->guard('customer')->check()){ ?>
@@ -65,8 +65,8 @@
                   <li class="nav-item"> <a href="<?php echo e(url('shipping-address')); ?>" class="nav-link"><?php echo app('translator')->get('website.Shipping Address'); ?></a> </li>
                   <li class="nav-item"> <a href="<?php echo e(url('logout')); ?>" class="nav-link"><?php echo app('translator')->get('website.Logout'); ?></a> </li>
                   <?php }else{ ?>
-                    <li class="nav-item"><div class="nav-link"><?php echo app('translator')->get('website.Welcome'); ?>!</div></li>
-                    <li class="nav-item"> <a href="<?php echo e(URL::to('/login')); ?>" class="nav-link -before"><i class="fa fa-lock" aria-hidden="true"></i>&nbsp;<?php echo app('translator')->get('website.Login/Register'); ?></a> </li>                      
+                    <li class="nav-item"><div style="color:#6f6e6e !important;" class="nav-link"><?php echo app('translator')->get('website.Welcome'); ?>!</div></li>
+                    <li class="nav-item"> <a style="color:#6f6e6e !important;" href="<?php echo e(URL::to('/login')); ?>" class="nav-link -before"><i class="fa fa-lock" aria-hidden="true"></i>&nbsp;<?php echo app('translator')->get('website.Login/Register'); ?></a> </li>                      
                   <?php } ?>
               </ul> 
             </div>   
@@ -108,7 +108,7 @@
                   </div>
                   <div class="search-field-wrap">
                       <input style="border:0px !important;  type="search" name="search" placeholder="<?php echo app('translator')->get('website.Search entire store here'); ?>..." data-toggle="tooltip" data-placement="bottom" title="<?php echo app('translator')->get('website.Search Products'); ?>" value="<?php echo e(app('request')->input('search')); ?>">
-                      <button style="background-color:#3e3a39;border:1px solid #1d1d1d;" class="btn btn-secondary swipe-to-top" data-toggle="tooltip" 
+                      <button style="background-color:#262121;border:1px solid #1d1d1d;" class="btn btn-secondary swipe-to-top" data-toggle="tooltip" 
                       data-placement="bottom" title="<?php echo app('translator')->get('website.Search Products'); ?>">
                       <i class="fa fa-search"></i></button>
                   </div>
@@ -120,7 +120,7 @@
             <li>
               <a href="<?php echo e(URL::to('/wishlist')); ?>" class="btn" data-toggle="tooltip" data-placement="bottom" title="<?php echo app('translator')->get('website.Wishlist'); ?>">
                 <i style="color:#ffffff;" class="far fa-heart"></i>
-                <span style="background-color:#3e3a39 !important;" class="badge badge-secondary total_wishlist"><?php echo e($result['commonContent']['total_wishlist']); ?></span>
+                <span style="background-color:#262121 !important;color:#d8cd2b;" class="badge badge-secondary total_wishlist"><?php echo e($result['commonContent']['total_wishlist']); ?></span>
               </a>
             </li>
             <li class="dropdown head-cart-content">
