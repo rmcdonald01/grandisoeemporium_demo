@@ -92,7 +92,7 @@
             <div class="col-12 col-sm-6">
             
               <form class="form-inline" action="{{ URL::to('/shop')}}" method="get">   
-                <div class="search-field-module">   
+                <div class="search-field-module" style="border:0px !important;background-color:#1d1d1d !important;">   
                     <input type="hidden" name="category" class="category-value" value="">
                     @include('web.common.HeaderCategories')
                   <button class="btn btn-secondary swipe-to-top dropdown-toggle header-selection" type="button" id="headerOneCartButton"  
