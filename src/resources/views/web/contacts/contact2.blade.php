@@ -63,7 +63,7 @@
               <div class="col-6">
                   
                   <ul class="contact-logo pl-0 mb-0">
-                    <li> <i class="fas fa-mobile-alt"></i><br>@lang('website.CONTACT US') </li>
+                    <li> <i class="fas fa-mobile-alt"></i><br>@lang('website.CONTACT US')</li>
                     <li> <i class="fas fa-map-marker"></i><br>@lang('website.ADDRESS')
                     </li>
                     <li> <i class="fas fa-envelope"></i><br>@lang('website.EMAIL ADDRESS') </li>
@@ -72,10 +72,8 @@
               </div>  
               <div class="col-6 right">
                 <ul class="contact-info  pl-0 mb-0">
-                  <li><font>
-                    <a href="#" dir="ltr"><br>{{$result['commonContent']['setting'][11]->value}}</a>
-                  </font> </li>
-                  <li> <font><a href="#">@lang('website.Ecommerce')<br>@lang('website.Demo Store 3654123')</a></font></li>
+                  <li><font><a href="#" dir="ltr"><br>{{$result['commonContent']['setting'][11]->value}}</a></font></li>
+                  <li> <font><a href="#">9834 Bobolink Dr Conroe Tx, 77385 United States</a></font></li>
                   <li> <font><a href="mailto:{{$result['commonContent']['setting'][3]->value}}"><br>{{$result['commonContent']['setting'][3]->value}}</a> </font></li>
                   <li><font><a href="#" dir="ltr"><br>{{$result['commonContent']['setting'][11]->value}}</a> </font></li>
                 </ul>
@@ -84,7 +82,7 @@
               
              
              <p style="margin-top:30px;"">
-              @lang('website.Contact us text')
+              <!-- @lang('website.Contact us text') -->
              </p>
           </div>
        
