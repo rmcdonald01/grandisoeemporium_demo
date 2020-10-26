@@ -6,7 +6,7 @@
           <div class="pro-info" style="color:white !important;">
             <?php echo stripslashes($result['commonContent']['top_offers']->top_offers_text); ?>
           </div>
-          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <button style="color:white !important;" type="button" class="close" data-dismiss="alert" aria-label="Close">
               <span aria-hidden="true">×</span>
             </button>
         </div>
