@@ -5,8 +5,8 @@
 
 <button id="dropdownCartButton" class="btn dropdown-toggle" type="button" id="headerOneCartButton"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" > 
     <div class="cart-left">
-     <i class="fas fa-shopping-bag"></i>
-     <span class="badge badge-secondary">{{ $qunatity }}</span>
+     <i style="color:#ffffff;" class="fas fa-shopping-cart"></i>
+     <span style="background-color:#3e3a39 !important;" class="badge badge-secondary">{{ $qunatity }}</span>
     </div>
  
        <div class="cart-right d-flex flex-column align-self-end ml-13">
