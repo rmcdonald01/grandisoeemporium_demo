@@ -127,25 +127,11 @@
                           <?php endif; ?>
                       </li>
                       <li>
-                      <?php if(!empty($result['commonContent']['setting'][52]->value)): ?>
-                          <a href="<?php echo e($result['commonContent']['setting'][52]->value); ?>" class="fab fa-twitter" target="_blank"></a>
+                      <?php if(!empty($result['commonContent']['setting'][145]->value)): ?>
+                          <a href="<?php echo e($result['commonContent']['setting'][145]->value); ?>" class="fab fa-instagram" target="_blank"></a>
                       <?php else: ?>
-                          <a href="#" class="fab fa-twitter"></a>
+                          <a href="#" class="fab fa-instagram"></a>
                       <?php endif; ?></li>
-                      <li>
-                      <?php if(!empty($result['commonContent']['setting'][51]->value)): ?>
-                          <a href="<?php echo e($result['commonContent']['setting'][51]->value); ?>"  target="_blank"><i class="fab fa-google"></i></a>
-                      <?php else: ?>
-                          <a href="#"><i class="fab fa-google"></i></a>
-                      <?php endif; ?>
-                      </li>
-                      <li>
-                      <?php if(!empty($result['commonContent']['setting'][53]->value)): ?>
-                          <a href="<?php echo e($result['commonContent']['setting'][53]->value); ?>" class="fab fa-linkedin-in" target="_blank"></a>
-                      <?php else: ?>
-                          <a href="#" class="fab fa-linkedin-in"></a>
-                      <?php endif; ?>
-                      </li>
                   </ul>
 
               </div>

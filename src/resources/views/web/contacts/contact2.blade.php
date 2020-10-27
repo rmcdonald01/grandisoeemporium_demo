@@ -73,7 +73,7 @@
               <div class="col-6 right">
                 <ul class="contact-info  pl-0 mb-0">
                   <li><font><a href="#" dir="ltr"><br>{{$result['commonContent']['setting'][11]->value}}</a></font></li>
-                  <li> <font><a href="#">9834 Bobolink Dr Conroe Tx, 77385 United States</a></font></li>
+                  <li> <font><a href="#"><?=stripslashes($result['commonContent']['settings']['address'])?><br><?=stripslashes($result['commonContent']['settings']['city'])?> <?=stripslashes($result['commonContent']['settings']['state'])?> <?=stripslashes($result['commonContent']['settings']['zip'])?></a></font></li>
                   <li> <font><a href="mailto:{{$result['commonContent']['setting'][3]->value}}"><br>{{$result['commonContent']['setting'][3]->value}}</a> </font></li>
                   <li><font><a href="#" dir="ltr"><br>{{$result['commonContent']['setting'][11]->value}}</a> </font></li>
                 </ul>

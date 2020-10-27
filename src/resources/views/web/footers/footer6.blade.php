@@ -127,25 +127,11 @@
                           @endif
                       </li>
                       <li>
-                      @if(!empty($result['commonContent']['setting'][52]->value))
-                          <a href="{{$result['commonContent']['setting'][52]->value}}" class="fab fa-twitter" target="_blank"></a>
+                      @if(!empty($result['commonContent']['setting'][145]->value))
+                          <a href="{{$result['commonContent']['setting'][145]->value}}" class="fab fa-instagram" target="_blank"></a>
                       @else
-                          <a href="#" class="fab fa-twitter"></a>
+                          <a href="#" class="fab fa-instagram"></a>
                       @endif</li>
-                      <li>
-                      @if(!empty($result['commonContent']['setting'][51]->value))
-                          <a href="{{$result['commonContent']['setting'][51]->value}}"  target="_blank"><i class="fab fa-google"></i></a>
-                      @else
-                          <a href="#"><i class="fab fa-google"></i></a>
-                      @endif
-                      </li>
-                      <li>
-                      @if(!empty($result['commonContent']['setting'][53]->value))
-                          <a href="{{$result['commonContent']['setting'][53]->value}}" class="fab fa-linkedin-in" target="_blank"></a>
-                      @else
-                          <a href="#" class="fab fa-linkedin-in"></a>
-                      @endif
-                      </li>
                   </ul>
 
               </div>

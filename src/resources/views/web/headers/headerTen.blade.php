@@ -79,14 +79,13 @@
       <div class="row align-items-center">
         <div class="col-12 col-md-12 col-lg-3">
           <a style="color:#ffffff;" href="{{ URL::to('/')}}" class="logo" data-toggle="tooltip" data-placement="bottom" title="@lang('website.logo')">
-            <!-- @if($result['commonContent']['settings']['sitename_logo']=='name') -->
-            <!-- <?=stripslashes($result['commonContent']['settings']['website_name'])?> -->
-            <!-- @endif -->
+            @if($result['commonContent']['settings']['sitename_logo']=='name')
+            <?=stripslashes($result['commonContent']['settings']['website_name'])?>
+            @endif
         
-            <!-- @if($result['commonContent']['settings']['sitename_logo']=='logo') -->
-            <!-- <img class="img-fluid" src="{{asset('').$result['commonContent']['settings']['website_logo']}}" alt="<?=stripslashes($result['commonContent']['settings']['website_name'])?>"> -->
-            <!-- @endif -->
-            THE GRANDIOSE EMPORIUM
+            @if($result['commonContent']['settings']['sitename_logo']=='logo')
+            <img class="img-fluid" src="{{asset('').$result['commonContent']['settings']['website_logo']}}" alt="<?=stripslashes($result['commonContent']['settings']['website_name'])?>">
+            @endif
             </a>
         </div>
 
