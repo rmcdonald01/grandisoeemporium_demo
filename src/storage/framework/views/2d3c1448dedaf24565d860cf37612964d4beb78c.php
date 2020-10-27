@@ -80,7 +80,7 @@
       <div class="row align-items-center">
         <div class="col-12 col-md-12 col-lg-3">
           <a style="color:#ffffff;" href="<?php echo e(URL::to('/')); ?>" class="logo" data-toggle="tooltip" data-placement="bottom" title="<?php echo app('translator')->get('website.logo'); ?>">
-            <?php if($result['commonContent']['settings']['sitename_logo']=='name'): ?> -->
+            <?php if($result['commonContent']['settings']['sitename_logo']=='name'): ?>
             <?=stripslashes($result['commonContent']['settings']['website_name'])?>
             <?php endif; ?>
         

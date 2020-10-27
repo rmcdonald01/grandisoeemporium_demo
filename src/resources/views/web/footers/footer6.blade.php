@@ -119,13 +119,13 @@
                       </div>
                     </div>
                   <ul class="list">
-                    <li>
+                    <!-- <li>
                         @if(!empty($result['commonContent']['setting'][50]->value))
                           <a href="{{$result['commonContent']['setting'][50]->value}}" class="fab fa-facebook-f" target="_blank"></a>
                           @else
                             <a href="#" class="fab fa-facebook-f"></a>
                           @endif
-                      </li>
+                      </li> -->
                       <li>
                       @if(!empty($result['commonContent']['setting'][145]->value))
                           <a href="{{$result['commonContent']['setting'][145]->value}}" class="fab fa-instagram" target="_blank"></a>
