@@ -6,26 +6,26 @@
           <div class="container">
             <div class="row justify-content-center">
                 <div class="col-12 align-self-center">
-                    <div class="newsletter">
+                      <!-- <div class="newsletter">
                         <h5>@lang('website.Subscribe for Newsletter')</h5>
                         <div class="block">
                        
-                <form class="form-inline mailchimp-form" action="{{url('subscribeMail')}}" >
-                  <div class="search-field-module">  
-                    <div class="search-field-wrap">
-                        <input type="email" name="email" class="email" placeholder="@lang('website.Your email address here')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="@lang('website.Your email address here')">
-                        <button class="btn btn-secondary swipe-to-top mailchimp-btn" type="submit" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="@lang('website.Subscribe')">
+                        <form class="form-inline mailchimp-form" action="{{url('subscribeMail')}}" >
+                          <div class="search-field-module">  
+                          <div class="search-field-wrap">
+                          <input type="email" name="email" class="email" placeholder="@lang('website.Your email address here')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="@lang('website.Your email address here')">
+                          <button class="btn btn-secondary swipe-to-top mailchimp-btn" type="submit" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="@lang('website.Subscribe')">
                           @lang('website.Subscribe')</button>
+                          </div>
+                          </div>
+                          </form>
+                          </div>
+                        </div>
+                      </div> -->
                     </div>
                   </div>
-                </form>
-                        </div>
-                    </div>
                 </div>
-            </div>
-          </div>
-        </div>
-  </div>
+              </div>
 
     <div class="container">
       <div class="row">
@@ -147,9 +147,7 @@
                       @endif
                       </li>
                   </ul>
-                  <div class="footer-image">
-                    <img class="img-fluid" src="{{asset('web/images/miscellaneous/payments.png')}}">
-                  </div>
+
               </div>
 
           </div>

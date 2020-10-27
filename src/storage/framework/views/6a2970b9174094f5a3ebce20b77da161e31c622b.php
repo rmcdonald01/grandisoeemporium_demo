@@ -6,26 +6,26 @@
           <div class="container">
             <div class="row justify-content-center">
                 <div class="col-12 align-self-center">
-                    <div class="newsletter">
+                      <!-- <div class="newsletter">
                         <h5><?php echo app('translator')->get('website.Subscribe for Newsletter'); ?></h5>
                         <div class="block">
                        
-                <form class="form-inline mailchimp-form" action="<?php echo e(url('subscribeMail')); ?>" >
-                  <div class="search-field-module">  
-                    <div class="search-field-wrap">
-                        <input type="email" name="email" class="email" placeholder="<?php echo app('translator')->get('website.Your email address here'); ?>" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="<?php echo app('translator')->get('website.Your email address here'); ?>">
-                        <button class="btn btn-secondary swipe-to-top mailchimp-btn" type="submit" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="<?php echo app('translator')->get('website.Subscribe'); ?>">
+                        <form class="form-inline mailchimp-form" action="<?php echo e(url('subscribeMail')); ?>" >
+                          <div class="search-field-module">  
+                          <div class="search-field-wrap">
+                          <input type="email" name="email" class="email" placeholder="<?php echo app('translator')->get('website.Your email address here'); ?>" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="<?php echo app('translator')->get('website.Your email address here'); ?>">
+                          <button class="btn btn-secondary swipe-to-top mailchimp-btn" type="submit" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="<?php echo app('translator')->get('website.Subscribe'); ?>">
                           <?php echo app('translator')->get('website.Subscribe'); ?></button>
+                          </div>
+                          </div>
+                          </form>
+                          </div>
+                        </div>
+                      </div> -->
                     </div>
                   </div>
-                </form>
-                        </div>
-                    </div>
                 </div>
-            </div>
-          </div>
-        </div>
-  </div>
+              </div>
 
     <div class="container">
       <div class="row">
@@ -147,9 +147,7 @@
                       <?php endif; ?>
                       </li>
                   </ul>
-                  <div class="footer-image">
-                    <img class="img-fluid" src="<?php echo e(asset('web/images/miscellaneous/payments.png')); ?>">
-                  </div>
+
               </div>
 
           </div>
