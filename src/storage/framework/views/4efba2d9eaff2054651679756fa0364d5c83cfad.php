@@ -81,10 +81,7 @@
               </div>  
             </div>
               
-             
-             <p style="margin-top:30px;"">
-              <!-- <?php echo app('translator')->get('website.Contact us text'); ?> -->
-             </p>
+            
           </div>
        
            

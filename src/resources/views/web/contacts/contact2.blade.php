@@ -80,10 +80,7 @@
               </div>  
             </div>
               
-             
-             <p style="margin-top:30px;"">
-              <!-- @lang('website.Contact us text') -->
-             </p>
+            
           </div>
        
            

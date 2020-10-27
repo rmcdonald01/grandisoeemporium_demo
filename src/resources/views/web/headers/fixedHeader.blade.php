@@ -1,6 +1,6 @@
 
         <header id="stickyHeader" class="header-area header-sticky d-none">
-          <div class="header-sticky-inner  bg-sticky-bar">
+          <div style="background-color:#111111 !important; color:hite !important;" class="header-sticky-inner  bg-sticky-bar">
             <div class="container">
     
                 <div class="row align-items-center">
@@ -8,7 +8,7 @@
                         <div class="logo">
                           <a href="{{ URL::to('/')}}" class="logo" data-toggle="tooltip" data-placement="bottom" title="@lang('website.logo')">
                             @if($result['commonContent']['settings']['sitename_logo']=='name')
-                            <?=stripslashes($result['commonContent']['settings']['website_name'])?>
+                              The Grandiose Emporium
                             @endif
                         
                             @if($result['commonContent']['settings']['sitename_logo']=='logo')
@@ -19,7 +19,7 @@
                           </div>
                     </div>
                     <div class="col-12 col-lg-7" style="position: static;">
-                      <nav id="navbar_header_9" class="navbar navbar-expand-lg  bg-nav-bar">
+                      <nav style="border 1px solid red !important" id="navbar_header_9" class="navbar navbar-expand-lg  bg-nav-bar">
                   
                         <div class="navbar-collapse">
                           <ul class="navbar-nav">
