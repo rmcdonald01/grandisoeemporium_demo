@@ -44,14 +44,14 @@
         </div>
       </div>
     </div>
-    <div class="header-maxi bg-header-bar ">
+    <div class="header-maxi bg-header-bar " style="background-color:#111111;">
       <div class="container">
 
         <div class="row align-items-center">
           <div class="col-2 pr-0">
               <div class="navigation-mobile-container">
                   <a href="javascript:void(0)" class="navigation-mobile-toggler">
-                      <span class="fas fa-bars"></span>
+                      <span style="color:white !important;" class="fas fa-bars"></span>
                   </a>
                   <nav id="navigation-mobile">
                       <div class="logout-main">
@@ -89,7 +89,7 @@
           <div class="col-8">
             <a href="<?php echo e(URL::to('/')); ?>" class="logo">
               <?php if($result['commonContent']['settings']['sitename_logo']=='name'): ?>
-              <?=stripslashes($result['commonContent']['settings']['website_name'])?>
+              <span style="font-family:arial !important;color:white !important;"><?=stripslashes($result['commonContent']['settings']['website_name'])?></span>
               <?php endif; ?>
 
               <?php if($result['commonContent']['settings']['sitename_logo']=='logo'): ?>
