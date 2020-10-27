@@ -6,26 +6,26 @@
           <div class="container">
             <div class="row justify-content-center">
                 <div class="col-12 align-self-center">
-                    <div class="newsletter">
+                      <!-- <div class="newsletter">
                         <h5>@lang('website.Subscribe for Newsletter')</h5>
                         <div class="block">
                        
-                <form class="form-inline mailchimp-form" action="{{url('subscribeMail')}}" >
-                  <div class="search-field-module">  
-                    <div class="search-field-wrap">
-                        <input type="email" name="email" class="email" placeholder="@lang('website.Your email address here')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="@lang('website.Your email address here')">
-                        <button class="btn btn-secondary swipe-to-top mailchimp-btn" type="submit" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="@lang('website.Subscribe')">
+                        <form class="form-inline mailchimp-form" action="{{url('subscribeMail')}}" >
+                          <div class="search-field-module">  
+                          <div class="search-field-wrap">
+                          <input type="email" name="email" class="email" placeholder="@lang('website.Your email address here')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="@lang('website.Your email address here')">
+                          <button class="btn btn-secondary swipe-to-top mailchimp-btn" type="submit" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="@lang('website.Subscribe')">
                           @lang('website.Subscribe')</button>
+                          </div>
+                          </div>
+                          </form>
+                          </div>
+                        </div>
+                      </div> -->
                     </div>
                   </div>
-                </form>
-                        </div>
-                    </div>
                 </div>
-            </div>
-          </div>
-        </div>
-  </div>
+              </div>
 
     <div class="container">
       <div class="row">
@@ -119,37 +119,21 @@
                       </div>
                     </div>
                   <ul class="list">
-                    <li>
+                    <!-- <li>
                         @if(!empty($result['commonContent']['setting'][50]->value))
                           <a href="{{$result['commonContent']['setting'][50]->value}}" class="fab fa-facebook-f" target="_blank"></a>
                           @else
                             <a href="#" class="fab fa-facebook-f"></a>
                           @endif
-                      </li>
+                      </li> -->
                       <li>
-                      @if(!empty($result['commonContent']['setting'][52]->value))
-                          <a href="{{$result['commonContent']['setting'][52]->value}}" class="fab fa-twitter" target="_blank"></a>
+                      @if(!empty($result['commonContent']['setting'][145]->value))
+                          <a href="{{$result['commonContent']['setting'][145]->value}}" class="fab fa-instagram" target="_blank"></a>
                       @else
-                          <a href="#" class="fab fa-twitter"></a>
+                          <a href="#" class="fab fa-instagram"></a>
                       @endif</li>
-                      <li>
-                      @if(!empty($result['commonContent']['setting'][51]->value))
-                          <a href="{{$result['commonContent']['setting'][51]->value}}"  target="_blank"><i class="fab fa-google"></i></a>
-                      @else
-                          <a href="#"><i class="fab fa-google"></i></a>
-                      @endif
-                      </li>
-                      <li>
-                      @if(!empty($result['commonContent']['setting'][53]->value))
-                          <a href="{{$result['commonContent']['setting'][53]->value}}" class="fab fa-linkedin-in" target="_blank"></a>
-                      @else
-                          <a href="#" class="fab fa-linkedin-in"></a>
-                      @endif
-                      </li>
                   </ul>
-                  <div class="footer-image">
-                    <img class="img-fluid" src="{{asset('web/images/miscellaneous/payments.png')}}">
-                  </div>
+
               </div>
 
           </div>

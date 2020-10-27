@@ -1,6 +1,6 @@
 
         <header id="stickyHeader" class="header-area header-sticky d-none">
-          <div class="header-sticky-inner  bg-sticky-bar">
+          <div style="background-color:#252525;" class="header-sticky-inner  bg-sticky-bar">
             <div class="container">
     
                 <div class="row align-items-center">
@@ -8,7 +8,7 @@
                         <div class="logo">
                           <a href="<?php echo e(URL::to('/')); ?>" class="logo" data-toggle="tooltip" data-placement="bottom" title="<?php echo app('translator')->get('website.logo'); ?>">
                             <?php if($result['commonContent']['settings']['sitename_logo']=='name'): ?>
-                            <?=stripslashes($result['commonContent']['settings']['website_name'])?>
+                            <span style="color:#6f6e6e;"><?=stripslashes($result['commonContent']['settings']['website_name'])?></span>
                             <?php endif; ?>
                         
                             <?php if($result['commonContent']['settings']['sitename_logo']=='logo'): ?>
@@ -18,11 +18,11 @@
 
                           </div>
                     </div>
-                    <div class="col-12 col-lg-7" style="position: static;">
+                    <div  class="col-12 col-lg-7" style="position: static;">
                       <nav id="navbar_header_9" class="navbar navbar-expand-lg  bg-nav-bar">
                   
                         <div class="navbar-collapse">
-                          <ul class="navbar-nav">
+                          <ul style="color:red !important;" class="navbar-nav">
                             <?php echo $result['commonContent']["menusRecursive"]; ?>
 
                                 

@@ -7,8 +7,8 @@
   
     <button class="btn dropdown-toggle" type="button" id="headerOneCartButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
     <div class="cart-left">
-      <i class="fas fa-shopping-bag"></i>
-      <span class="badge badge-secondary">{{ $qunatity }}</span>
+      <i style="color:white !important;" class="fas fa-shopping-cart"></i>
+      <span style="background-color:white !important;color:#000000 !important;" class="badge badge-secondary">{{ $qunatity }}</span>
     </div>
   
     </button> 
