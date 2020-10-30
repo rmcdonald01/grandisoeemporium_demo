@@ -1,6 +1,6 @@
 
         <header id="stickyHeader" class="header-area header-sticky d-none">
-          <div style="background-color:#252525;" class="header-sticky-inner  bg-sticky-bar">
+          <div style="background-color:#d8cd2b; color:red !important;" class="header-sticky-inner  bg-sticky-bar">
             <div class="container">
     
                 <div class="row align-items-center">
@@ -19,13 +19,11 @@
                           </div>
                     </div>
                     <div  class="col-12 col-lg-7" style="position: static;">
-                      <nav id="navbar_header_9" class="navbar navbar-expand-lg  bg-nav-bar">
+                      <nav id="navbar_header_9" class="navbar navbar-expand-lg  bg-nav-bar" style="color:red !important;">
                   
                         <div class="navbar-collapse">
-                          <ul style="color:red !important;" class="navbar-nav">
-                            <?php echo $result['commonContent']["menusRecursive"]; ?>
-
-                                
+                          <ul class="navbar-nav">
+                            <?php echo $result['commonContent']["menusRecursive"]; ?>   
                           </ul>
                         </div>
                       </nav>
