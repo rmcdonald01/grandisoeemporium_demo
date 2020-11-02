@@ -1,6 +1,6 @@
 
         <header id="stickyHeader" class="header-area header-sticky d-none">
-          <div style="background-color:#d8cd2b; color:red !important;" class="header-sticky-inner  bg-sticky-bar">
+          <div style="background-color:#111111;" class="header-sticky-inner  bg-sticky-bar">
             <div class="container">
     
                 <div class="row align-items-center">
@@ -19,11 +19,15 @@
                           </div>
                     </div>
                     <div  class="col-12 col-lg-7" style="position: static;">
-                      <nav id="navbar_header_9" class="navbar navbar-expand-lg  bg-nav-bar" style="color:red !important;">
+                      <nav id="navbar_header_9" class="navbar navbar-expand-lg  bg-nav-bar">
                   
                         <div class="navbar-collapse">
                           <ul class="navbar-nav">
-                            <?php echo $result['commonContent']["menusRecursive"]; ?>   
+                            <!-- <?php echo e($result['commonContent']["menusRecursive"]); ?>    -->
+                            <li class="nav-item dropdown " ><a class="nav-link " href="http://localhost/"  style="color:white;"> Home </a></li>
+                            <li class="nav-item dropdown "><a class="nav-link " href="http://localhost/shop" style="color:white;"> SHOP </a></li>
+                            <li class="nav-item dropdown "><a class="nav-link dropdown-toggle" href="#" style="color:white;"> INFO </a><div class="dropdown-menu" > <div class="dropdown-submenu submenu1"> <a class="dropdown-item" href="http://localhost/page?name=about-us"> About Us </a> </div> <div class="dropdown-submenu submenu1"> <a class="dropdown-item" href="http://localhost/page?name=privacy-policy"> Privacy Policy </a> </div></div></li>
+                            <li class="nav-item dropdown "><a class="nav-link " href="http://localhost/contact" style="color:white;"> Contact Us </a></li>
                           </ul>
                         </div>
                       </nav>
