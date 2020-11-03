@@ -63,7 +63,7 @@
                   <li class="nav-item"> <a href="<?php echo e(url('compare')); ?>" class="nav-link"><?php echo app('translator')->get('website.Compare'); ?>&nbsp;(<span id="compare"><?php echo e($count); ?></span>)</a> </li>
                   <li class="nav-item"> <a href="<?php echo e(url('orders')); ?>" class="nav-link"><?php echo app('translator')->get('website.Orders'); ?></a> </li>
                   <li class="nav-item"> <a href="<?php echo e(url('shipping-address')); ?>" class="nav-link"><?php echo app('translator')->get('website.Shipping Address'); ?></a> </li>
-                  <li class="nav-item"> <a href="<?php echo e(url('logout')); ?>" class="nav-link"><?php echo app('translator')->get('website.Logout'); ?></a> </li>
+                  <li class="nav-item" > <a href="<?php echo e(url('logout')); ?>" class="nav-link" style="color:white;"><?php echo app('translator')->get('website.Logout'); ?></a> </li>
                   <?php }else{ ?>
                     <li class="nav-item"><div style="color:#6f6e6e !important;" class="nav-link"><?php echo app('translator')->get('website.Welcome'); ?>!</div></li>
                     <li class="nav-item"> <a style="color:#6f6e6e !important;" href="<?php echo e(URL::to('/login')); ?>" class="nav-link -before"><i class="fa fa-lock" aria-hidden="true"></i>&nbsp;<?php echo app('translator')->get('website.Login/Register'); ?></a> </li>                      
