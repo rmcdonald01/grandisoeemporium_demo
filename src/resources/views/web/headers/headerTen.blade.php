@@ -62,7 +62,7 @@
                   <li class="nav-item"> <a href="{{url('compare')}}" class="nav-link">@lang('website.Compare')&nbsp;(<span id="compare">{{$count}}</span>)</a> </li>
                   <li class="nav-item"> <a href="{{url('orders')}}" class="nav-link">@lang('website.Orders')</a> </li>
                   <li class="nav-item"> <a href="{{url('shipping-address')}}" class="nav-link">@lang('website.Shipping Address')</a> </li>
-                  <li class="nav-item"> <a href="{{url('logout')}}" class="nav-link">@lang('website.Logout')</a> </li>
+                  <li class="nav-item" > <a href="{{url('logout')}}" class="nav-link" style="color:white;">@lang('website.Logout')</a> </li>
                   <?php }else{ ?>
                     <li class="nav-item"><div style="color:#6f6e6e !important;" class="nav-link">@lang('website.Welcome')!</div></li>
                     <li class="nav-item"> <a style="color:#6f6e6e !important;" href="{{ URL::to('/login')}}" class="nav-link -before"><i class="fa fa-lock" aria-hidden="true"></i>&nbsp;@lang('website.Login/Register')</a> </li>                      

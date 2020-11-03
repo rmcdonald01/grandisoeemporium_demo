@@ -113,9 +113,9 @@ jQuery(document).ready(function() {
                         <span style="color:red;" class="help-block error-content" hidden>@lang('website.Please enter your email')</span>
                       </div>
                       <?php } ?>
-                      <div class="form-group">
+                      <div style="display:none;" class="form-group">
                         <label for=""> @lang('website.Company')</label>
-                        <input type="text" required class="form-control field-validate" id="company" aria-describedby="companyHelp" placeholder="Enter Your Company Name" name="company" value="@if(!empty(session('shipping_address'))) {{session('shipping_address')->company}}@endif">
+                        <input type="text" required class="form-control field-validate" id="company" aria-describedby="companyHelp" placeholder="Enter Your Company Name" name="company" value="Personal">
                         <span style="color:red;" class="help-block error-content" hidden>@lang('website.Please enter your company name')</span>
                       </div>
 
@@ -193,7 +193,7 @@ jQuery(document).ready(function() {
                              <span class="help-block error-content" hidden>@lang('website.Please enter your last name')</span>
                            </div>
 
-                           <div class="form-group">
+                           <div style="display:none;" class="form-group">
                             <label for=""> @lang('website.Company')</label>
                              <input type="text" class="form-control same_address" @if(!empty(session('billing_address'))) @if(session('billing_address')->same_billing_address==1) readonly @endif @else readonly @endif  id="billing_company" name="billing_company" value="@if(!empty(session('billing_address'))){{session('billing_address')->billing_company}}@endif" id="exampleInputCompany1" aria-describedby="companyHelp" placeholder="Enter Your Company Name">
                              <span class="help-block error-content" hidden>@lang('website.Please enter your company name')</span>
