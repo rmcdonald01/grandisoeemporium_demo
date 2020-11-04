@@ -1,4 +1,5 @@
   <!-- Shop Page One content -->
+<h1>HELLO</h1>
   <div class="container-fuild">
     <nav aria-label="breadcrumb">
         <div class="container">
@@ -259,7 +260,7 @@
                                     
                                       
                                     @endforeach
-                                    @include('web.common.scripts.addToCompare')
+                                    <!-- @include('web.common.scripts.addToCompare') -->
                                       
                                   </div>
                               </div> 
