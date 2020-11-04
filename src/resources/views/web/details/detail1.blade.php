@@ -393,7 +393,7 @@
           <div class="pro-sub-buttons">
               <div class="buttons">
                   <button class="btn btn-link is_liked" products_id="<?=$result['detail']['product_data'][0]->products_id?>" style="padding-left: 0;"><i class="fas fa-heart"></i> @lang('website.Add to Wishlist') </button>
-                  <button type="button" class="btn btn-link" onclick="myFunction3({{$result['detail']['product_data'][0]->products_id}})"><i class="fas fa-align-right"></i>@lang('website.Add to Compare')</button>
+                  <!-- <button type="button" class="btn btn-link" onclick="myFunction3({{$result['detail']['product_data'][0]->products_id}})"><i class="fas fa-align-right"></i>@lang('website.Add to Compare')</button> -->
               
               </div>
               <!-- AddToAny BEGIN -->

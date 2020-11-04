@@ -30,21 +30,21 @@
     <div class="container">
       <div class="row">
         <div class="col-12 col-lg-3">
-          <div class="single-footer">
+          <div class="single-footer" style="margin-left:-20px;">
             <h5><?php echo app('translator')->get('website.About Store'); ?></h5>
             <div class="row">
               <div class="col-12 col-lg-8">
                 <hr>
+                </div>
               </div>
-            </div>
-            <ul class="contact-list  pl-0 mb-0">
+              <ul class="contact-list  pl-0 mb-0">
               <li> <i class="fas fa-map-marker"></i><span><?php echo e($result['commonContent']['setting'][4]->value); ?> <?php echo e($result['commonContent']['setting'][5]->value); ?> <?php echo e($result['commonContent']['setting'][6]->value); ?>, <?php echo e($result['commonContent']['setting'][7]->value); ?> <?php echo e($result['commonContent']['setting'][8]->value); ?></span> </li>
               <li> <i class="fas fa-phone"></i><span dir="ltr">(<?php echo e($result['commonContent']['setting'][11]->value); ?>)</span> </li>
               <li> <i class="fas fa-envelope"></i><span> <a href="mailto:<?php echo e($result['commonContent']['setting'][3]->value); ?>"><?php echo e($result['commonContent']['setting'][3]->value); ?></a> </span> </li>
 
-            </ul>
+              </ul>
+            </div>
           </div>
-        </div>
         <div class="col-12 col-md-6 col-lg-3">
           <div class="footer-block">
               <div class="single-footer single-footer-left">
