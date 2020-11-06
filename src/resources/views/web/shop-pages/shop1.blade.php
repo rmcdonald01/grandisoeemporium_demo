@@ -1,5 +1,4 @@
   <!-- Shop Page One content -->
-<h1>HELLO</h1>
   <div class="container-fuild">
     <nav aria-label="breadcrumb">
         <div class="container">

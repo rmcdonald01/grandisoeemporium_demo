@@ -1,4 +1,5 @@
   <!-- Shop Page One content -->
+<h1>HELLO</h1>
   <div class="container-fuild">
     <nav aria-label="breadcrumb">
         <div class="container">
@@ -260,7 +261,7 @@
                                     
                                       
                                     <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
-                                    <?php echo $__env->make('web.common.scripts.addToCompare', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
+                                    <!-- <?php echo $__env->make('web.common.scripts.addToCompare', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?> -->
                                       
                                   </div>
                               </div> 
