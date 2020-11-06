@@ -566,7 +566,7 @@ class Index extends Model
                         $link = '#';
                     }
 
-                    $ul .= '<li class="nav-item dropdown "><a class="nav-link  ' . $dropright . '" ' . $link . ' >
+                    $ul .= '<li class="nav-item dropdown "><a style="color:white !important;" class="nav-link  ' . $dropright . '" ' . $link . ' >
                 ' . $parents->name . '
                 </a>';
 
