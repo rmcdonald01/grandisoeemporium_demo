@@ -8,14 +8,15 @@
           
           <nav id="navbar_0_6" class="navbar navbar-expand-md navbar-dark navbar-0">
             <div class="navbar-lang">
-              @if(count($languages) > 1)
+              @if(count($languages) > 0)
 
               <div class="country-flag">
                 <h4>
                   <span>
                     <ul>
                       @foreach($languages as $language)
-                      <li><a onclick="myFunction1({{$language->languages_id}})" href="#"><img class="img-fluid" src="{{asset('').$language->image_path}}"></a></li>
+                      <!-- <li><a onclick="myFunction1({{$language->languages_id}})" href="#"><img class="img-fluid" src="{{asset('').$language->image_path}}"></a></li> -->
+                      <li><a href="#"><img class="img-fluid" src="{{asset('').$language->image_path}}"></a></li>
                       @endforeach 
                       
                     </ul>
@@ -25,18 +26,19 @@
 
               @include('web.common.scripts.changeLanguage')
               @endif
-              @if(count($currencies) > 1)
+              @if(count($currencies) > 0)
                 <div class="dropdown">
                   <button style="color:white !important;" class="btn dropdown-toggle" type="button" >
                     {{session('currency_code')}}
                   </button>
-                  <div class="dropdown-menu">
+                  <!-- Not needed at the moment.. -->
+                  <!-- <div class="dropdown-menu">
                     @foreach($currencies as $currency)
                     <a onclick="myFunction2({{$currency->id}})" class="dropdown-item" href="#">
                       <span>{{$currency->code}}</span>   
                     </a>
                     @endforeach
-                  </div>
+                  </div> -->
                 </div>
                 @include('web.common.scripts.changeCurrency')
               @endif
