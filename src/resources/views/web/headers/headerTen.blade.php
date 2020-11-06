@@ -129,17 +129,17 @@
       </div>
     </div>
   </div> 
-      <div class="header-navbar bg-menu-bar">
+      <div class="header-navbar bg-menu-bar" style="background-color:#1d1d1d;">
           <div class="container">
-            <nav id="navbar_header_9" class="navbar navbar-expand-lg  bg-nav-bar">
+            <nav id="navbar_header_9" class="navbar navbar-expand-lg  bg-nav-bar" style="background-color:#1d1d1d;">
         
               <div class="navbar-collapse" >
                 <ul class="navbar-nav">
                   {!! $result['commonContent']["menusRecursive"] !!}
                   <li class="nav-item ">
                     <a class="nav-link">
-                        <span>@lang('website.Call Us Now')</span>
-                        <phone dir="ltr">{{$result['commonContent']['setting'][11]->value}}</phone>
+                        <span style="color:white;">@lang('website.Call Us Now')</span>
+                        <phone style="color:white;" dir="ltr">{{$result['commonContent']['setting'][11]->value}}</phone>
                     </a>
                   </li>     
                 </ul>

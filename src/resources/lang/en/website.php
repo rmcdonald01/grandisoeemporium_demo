@@ -118,7 +118,7 @@ return [
 
 	'Email'=>'Email',
 
-	'Copy Rights'=>date('Y',time()).' Company, Inc',
+	'Copy Rights'=>date('Y',time()).' The Grandiose Emporium ',
 
 
 	'View All News'=>'View All News',

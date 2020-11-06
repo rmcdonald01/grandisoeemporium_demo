@@ -23,11 +23,7 @@
                   
                         <div class="navbar-collapse">
                           <ul class="navbar-nav">
-                            <!-- {{ $result['commonContent']["menusRecursive"] }}    -->
-                            <li class="nav-item dropdown " ><a class="nav-link " href="http://localhost/"  style="color:white;"> Home </a></li>
-                            <li class="nav-item dropdown "><a class="nav-link " href="http://localhost/shop" style="color:white;"> SHOP </a></li>
-                            <li class="nav-item dropdown "><a class="nav-link dropdown-toggle" href="#" style="color:white;"> INFO </a><div class="dropdown-menu" > <div class="dropdown-submenu submenu1"> <a class="dropdown-item" href="http://localhost/page?name=about-us"> About Us </a> </div> <div class="dropdown-submenu submenu1"> <a class="dropdown-item" href="http://localhost/page?name=privacy-policy"> Privacy Policy </a> </div></div></li>
-                            <li class="nav-item dropdown "><a class="nav-link " href="http://localhost/contact" style="color:white;"> Contact Us </a></li>
+                            {!! $result['commonContent']["menusRecursive"] !!}   
                           </ul>
                         </div>
                       </nav>
