@@ -8,7 +8,7 @@
           
           <nav id="navbar_0_6" class="navbar navbar-expand-md navbar-dark navbar-0">
             <div class="navbar-lang">
-              <?php if(count($languages) > 1): ?>
+              <?php if(count($languages) > 0): ?>
 
               <div class="country-flag">
                 <h4>
@@ -25,19 +25,20 @@
 
               <?php echo $__env->make('web.common.scripts.changeLanguage', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
               <?php endif; ?>
-              <?php if(count($currencies) > 1): ?>
+              <?php if(count($currencies) > 0): ?>
                 <div class="dropdown">
                   <button style="color:white !important;" class="btn dropdown-toggle" type="button" >
                     <?php echo e(session('currency_code')); ?>
 
                   </button>
-                  <div class="dropdown-menu">
+                  <!-- Not needed at the moment.. -->
+                  <!-- <div class="dropdown-menu">
                     <?php $__currentLoopData = $currencies; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $currency): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                     <a onclick="myFunction2(<?php echo e($currency->id); ?>)" class="dropdown-item" href="#">
                       <span><?php echo e($currency->code); ?></span>   
                     </a>
                     <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
-                  </div>
+                  </div> -->
                 </div>
                 <?php echo $__env->make('web.common.scripts.changeCurrency', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
               <?php endif; ?>
