@@ -1,3 +1,6 @@
+<?php
+echo 'Hello World'
+?>
 <div class="container-fuild">
   <nav aria-label="breadcrumb">
       <div class="container">
@@ -17,7 +20,6 @@
       </div>
     </nav>
 </div> 
-
 <section class="pro-content">
 @if($result['detail']['product_data'])
   <div class="container">
