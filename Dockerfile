@@ -6,6 +6,10 @@ RUN apk add --no-cache libzip-dev && docker-php-ext-configure zip --with-libzip=
 RUN docker-php-ext-install pdo pdo_mysql
 RUN docker-php-ext-configure intl && docker-php-ext-install intl
 
+RUN docker-php-ext-install mbstring
+RUN apk add --no-cache --repository http://dl-cdn.alpinelinux.org/alpine/edge/community/ --allow-untrusted gnu-libiconv
+ENV LD_PRELOAD /usr/lib/preloadable_libiconv.so php
+
 RUN apk add --no-cache freetype libpng libjpeg-turbo freetype-dev libpng-dev libjpeg-turbo-dev && \
   docker-php-ext-configure gd \
     --with-gd \
