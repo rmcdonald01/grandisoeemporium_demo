@@ -23,7 +23,7 @@
     <?php $__currentLoopData = $result['commonContent']['categories']; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $categories_data): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
         <?php if($counter<=7): ?>
         
-          <div class="col-12 col-md-6 col-lg-3 cat-banner">
+          <div class="col-12 col-md-6 col-lg-4 cat-banner">
             
             <figure class="categories-image">
               <a href="<?php echo e(URL::to('/shop?category='.$categories_data->slug)); ?>">
