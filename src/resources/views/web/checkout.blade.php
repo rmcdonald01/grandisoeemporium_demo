@@ -270,18 +270,17 @@ jQuery(document).ready(function() {
                                 <div class="row"> <p>@lang('website.Please select a prefered shipping method to use on this order')</p></div>
                              </div>
 
-                             <form name="shipping_mehtods" method="post" id="shipping_mehtods_form" enctype="multipart/form-data" action="{{ URL::to('/checkout_payment_method')}}">
+                             <form name="shipping_mehtods" method="post" id="shipping_mehtods_form" enctype="multipart/form-data" action="{{ URL::to('/checkout_payment_method')}}" >
                               <input type="hidden" name="_token" id="csrf-token" value="{{ Session::token() }}" />
                                 @if(!empty($result['shipping_methods'])>0)
                                     <input type="hidden" name="mehtod_name" id="mehtod_name">
                                     <input type="hidden" name="shipping_price" id="shipping_price">
 
                                      @foreach($result['shipping_methods'] as $shipping_methods)
-                                        <div class="heading">
+                                        <div class="heading" style="background-color:#252525;padding:20px !important;color:white;">
                                             <h2>{{$shipping_methods['name']}}</h2>
-                                            <hr>
                                         </div>
-                                        <div class="form-check">
+                                        <div style="margin-bottom:10px;" class="form-check">
 
                                             <div class="form-row">
                                                 @if($shipping_methods['success']==1)
@@ -442,13 +441,11 @@ jQuery(document).ready(function() {
                                       
                                 </div>
 
-                                   <div class="col-12 col-sm-12 mb-3">
-                                       <div class="row">
-                                         <div class="heading">
+                                   <div class="col-12 col-sm-12 col-md-8">
+                                        <div style="margin-top:10px;" class="row heading">
                                            <h2>@lang('website.Payment Methods')</h2>
-                                           <hr>
                                          </div>
-
+                                       <div class="row">
                                          <div class="alert alert-danger error_payment" style="display:none" role="alert">
                                             <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                                             @lang('website.Please select your payment method')
@@ -457,23 +454,23 @@ jQuery(document).ready(function() {
                                          
                                          <form name="shipping_mehtods" method="post" id="payment_mehtods_form" enctype="multipart/form-data" action="{{ URL::to('/order_detail')}}">
                                           <input type="hidden" name="_token" id="csrf-token" value="{{ Session::token() }}" />
-                                      
+                                          <br>
                                          <div class="form-group" style="width:100%; padding:0;">
                                           <label for="exampleFormControlTextarea1" style="width:100%; margin-bottom:30px;">@lang('website.Please select a prefered payment method to use on this order')</label>
                                           <input id="payment_currency" type="hidden" onClick="paymentMethods();" name="payment_currency" value="{{session('currency_code')}}">
                                           @foreach($result['payment_methods'] as $payment_methods)
                                           
                                             @if($payment_methods['active']==1)
-                                                <input id="payment_currency" type="hidden" onClick="paymentMethods();" name="payment_currency" value="{{$payment_methods['payment_currency']}}">
+                                                <input" id="payment_currency" type="hidden" onClick="paymentMethods();" name="payment_currency" value="{{$payment_methods['payment_currency']}}">
                                               @if($payment_methods['payment_method']=='braintree')
 
                                                   <input id="{{$payment_methods['payment_method']}}_public_key" type="hidden" name="public_key" value="{{$payment_methods['public_key']}}">
                                                   <input id="{{$payment_methods['payment_method']}}_environment" type="hidden" name="{{$payment_methods['payment_method']}}_environment" value="{{$payment_methods['environment']}}">
                                           
                                           
-                                                <div class="form-check form-check-inline">
+                                                <div  class="form-check form-check-inline" >
                                                     <input id="{{$payment_methods['payment_method']}}_label" type="radio" onClick="paymentMethods();" name="payment_method" class="form-check-input payment_method" value="{{$payment_methods['payment_method']}}" @if(!empty(session('payment_method'))) @if(session('payment_method')==$payment_methods['payment_method']) checked @endif @endif>
-                                                    <label class="form-check-label" for="{{$payment_methods['payment_method']}}_label"><img src="{{asset('web/images/miscellaneous').'/'.$payment_methods['payment_method'].'.png'}}" alt="{{$payment_methods['name']}}"></label>
+                                                    <label style="display:none;" class="form-check-label" for="{{$payment_methods['payment_method']}}_label"><img src="{{asset('web/images/miscellaneous').'/'.$payment_methods['payment_method'].'.png'}}" alt="{{$payment_methods['name']}}"></label>
                                                 </div>
                                               @else
                                               
@@ -481,16 +478,17 @@ jQuery(document).ready(function() {
                                                   <input id="{{$payment_methods['payment_method']}}_environment" type="hidden" name="{{$payment_methods['payment_method']}}_environment" value="{{$payment_methods['environment']}}">
                                                 
                                                   
-                                                  <div class="form-check form-check-inline">
+                                                  <div class="form-check form-check-inline" style="margin-bottom:10px;background-color:transparent;">
                                                     <input onClick="paymentMethods();" id="{{$payment_methods['payment_method']}}_label" type="radio" name="payment_method" class="form-check-input payment_method" value="{{$payment_methods['payment_method']}}" @if(!empty(session('payment_method'))) @if(session('payment_method')==$payment_methods['payment_method']) checked @endif @endif>
                                                     <label class="form-check-label" for="{{$payment_methods['payment_method']}}_label">
-                                                      @if(file_exists( 'web/images/miscellaneous/'.$payment_methods['payment_method'].'.png'))
-                                                        <img width="100px" src="{{asset('web/images/miscellaneous/').'/'.$payment_methods['payment_method'].'.png'}}" alt="{{$payment_methods['name']}}">
+                                                      @if(file_exists( 'web/miscellaneous/'.$payment_methods['payment_method'].'.png'))
+                                                        <img width="70px" height="30px" src="{{asset('web/miscellaneous/').'/'.$payment_methods['payment_method'].'.png'}}" alt="{{$payment_methods['name']}}">
                                                       @else
                                                       {{$payment_methods['name']}}
                                                       @endif
                                                     </label>
                                                   </div>
+   
                                               @endif  
                                             @endif
 
@@ -610,11 +608,14 @@ jQuery(document).ready(function() {
                                        <!-- The stripe Modal -->
                                        <div class="modal fade" id="stripeModel">
                                            <div class="modal-dialog">
-                                               <div class="modal-content">
 
+                                               <div class="modal-content">
                                                <main>
                                                <div class="container-lg">
                                                    <div class="cell example example2">
+                                                   <!-- @if(file_exists( 'web/miscellaneous/'.$payment_methods['payment_method'].'.png'))
+                                                    <div style="width:100%;margin-bottom:10px;"><img width="100px" height="50px" src="{{asset('web/miscellaneous/').'/'.'stripe.png'}}" alt="stripe"></div>
+                                                  @endif -->
                                                        <form>
                                                          <div class="row">
                                                            <div class="field">
