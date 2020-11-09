@@ -23,7 +23,7 @@
     @foreach($result['commonContent']['categories'] as $categories_data)
         @if($counter<=7)
         
-          <div class="col-12 col-md-6 col-lg-3 cat-banner">
+          <div class="col-12 col-md-6 col-lg-4 cat-banner">
             
             <figure class="categories-image">
               <a href="{{ URL::to('/shop?category='.$categories_data->slug)}}">
